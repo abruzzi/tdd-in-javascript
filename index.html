@@ -51,11 +51,22 @@
 		color: #eeeeee;
 	}
 
+	#cover small {
+		color: #eeeeee;
+	}
 	#cover small a{
 		color: #f68d2e;
 	}
 
 	#unit-tests section h2{
+		color: #407EC9;
+	}
+
+	#env section h2 {
+		color: #eeeeee;	
+	}
+
+	#practice section h2 {
 		color: #407EC9;
 	}
 
@@ -84,6 +95,23 @@
 	#sbe table {
 		border-collapse: collapse;
 	}
+
+	#practice table {
+		border-collapse: collapse;
+	}
+
+	#practice table td,th {
+		border: 1px solid #407EC9;
+		text-align: center;
+		padding: 4px 10px;
+	}
+
+	#practice table thead th{
+		background-color: #407EC9;
+		color: #eeeeee;
+		padding: 4px 40px;
+	}
+
 	#sbe table td,th {
 		border: 1px solid #407EC9;
 		text-align: center;
@@ -94,6 +122,10 @@
 		background-color: #407EC9;
 		color: #eeeeee;
 		padding: 4px 10px;
+	}
+
+	#end small a {
+		color: #f68d2e;
 	}
 </style>
 				<section data-background="#eeeeee" id="unit-tests">
@@ -142,6 +174,7 @@ function updateContent(url) {}
 					<section>
 						<h2>So, what's <span class="highlight">TDD</span> anyway</h2>
 					</section>
+
 					<section>
 						<h2>Tea Driven Development</h2>
 						<img src="tea.jpg" class="inline">
@@ -150,23 +183,13 @@ function updateContent(url) {}
 					<section>
 						<h2><span class="highlight">Test</span> Driven Development</h2>
 					</section>
+
+					<section>
+						<h2>Not just write test <span class="highlight">first</span></h2>
+					</section>
+
 					<section><img src="tdd_flow.gif" class="inline"></section>	
 				</section>
-
-<!-- 				<section data-background="rgba(94,98,101,0)">
-					<section><h2>Now, let's talk about <span style="color:orangered">BDD</span></h2></section>
-				
-					<section>
-						<h2>Beer Driven Development</h2>
-						<img src="beer.jpg" style="border:0">
-					</section>
-					<section>
-						<h2><span class="highlight">behavior</span> Driven Development</h2>
-					</section>
-					<section>
-						<img src="TDD-vs-BDD.jpg" style="border:0">
-					</section>
-				</section> -->
 
 				<section data-background="#eeeeee" id="sbe">
 					<section>
@@ -181,97 +204,106 @@ Free delivery is offered to VIP customers once they reach a certain number of bo
 					</section>
 
 					<section>
-<table>
-    <thead>
-        <tr>
-            <th>Type of customer</th>
-            <th>NO. of books in cart</th>
-            <th>Free delivery?</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>VIP</td>
-            <td>9</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>VIP</td>
-            <td>10</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td>VIP</td>
-            <td>11</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td>Regular</td>
-            <td>9</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>Regular</td>
-            <td>10</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>Regular</td>
-            <td>11</td>
-            <td>No</td>
-        </tr>
-    </tbody>
-</table>
-
+						<table>
+						    <thead>
+						        <tr>
+						            <th>Type of customer</th>
+						            <th>NO. of books in cart</th>
+						            <th>Free delivery?</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+						            <td>VIP</td>
+						            <td>9</td>
+						            <td>No</td>
+						        </tr>
+						        <tr>
+						            <td>VIP</td>
+						            <td>10</td>
+						            <td>Yes</td>
+						        </tr>
+						        <tr>
+						            <td>VIP</td>
+						            <td>11</td>
+						            <td>Yes</td>
+						        </tr>
+						        <tr>
+						            <td>Regular</td>
+						            <td>9</td>
+						            <td>No</td>
+						        </tr>
+						        <tr>
+						            <td>Regular</td>
+						            <td>10</td>
+						            <td>No</td>
+						        </tr>
+						        <tr>
+						            <td>Regular</td>
+						            <td>11</td>
+						            <td>No</td>
+						        </tr>
+						    </tbody>
+						</table>
 					</section>
 				</section>
 
-				<section>
+				<section data-background="#407EC9" id="env">
 					<section>
-						<h2>now, show me the code</h2>
+						<h2>environment <span class="highlight">setup</span></h2>
+					</section>
+					<section>
+						<img src="jasmine.png" class="inline">
 					</section>
 				</section>
 
-				<section>
-					<section>
-						<h2>environment setup</h2>
-					</section>
-					<section>
-						<h2>Jasmine</h2>
-					</section>
-				</section>
-
-				<section>
+				<section data-background="#eeeeee" id="practice">
 					<section>
 						<h2>mommify</h2>
 					</section>
 
 					<section>
 						<p>
-							You are given strings of different lengths. If the number of <span style="color:orangered">vowels</span> are more than <span style="color:orangered">30%</span> of the string length then replace <span style="color:orangered">"mommy"</span> for each continuous set of vowels.
+							You are given strings of different lengths. If the number of <span class="highlight">vowels</span> are more than <span class="highlight">30%</span> of the string length then replace <span class="highlight">"mommy"</span> for each continuous set of vowels.
 						</p>
 					</section>
 
 					<section>
-						<ul>
-							<li>
-								"hmm" will become "hmm" (no vowels)
-							</li>
-							<li>
-								"his" will become "hmommys" (vowels are more than 30%)
-							</li>
-							<li>
-"hear" will become "hmommyr" and not "hmommymommyr" (continuous set of vowels)								
-							</li>
-						</ul>
-						<p>
-							
-
-						</p>
+						<table>
+						    <thead>
+						        <tr>
+						            <th>Input String</th>
+						            <th>Output String</th>
+						            <th>Comment</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+						            <td>hmm</td>
+						            <td>hmm</td>
+						            <td>No vowels</td>
+						        </tr>
+						        <tr>
+						            <td>ship</td>
+						            <td>ship</td>
+						            <td>Less than 30%</td>
+						        </tr>
+						        <tr>
+						            <td>his</td>
+						            <td>hmommys</td>
+						            <td>Greater than 30%</td>
+						        </tr>
+						        <tr>
+						            <td>hear</td>
+						            <td>hmommyr</td>
+						            <td>Continuous Vowels</td>
+						        </tr>
+						    </tbody>
+						</table>
 					</section>
 				</section>				
 
-				<section>
+				<section data-background="#407EC9" id="end">
 					<h2>THE END</h2>
 					<p>
 						<small><a href="https://github.com/abruzzi/3-pages-in-3-weeks">https://github.com/abruzzi/3-pages-in-3-weeks</a></small>
