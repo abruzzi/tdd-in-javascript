@@ -38,29 +38,122 @@
 		<div class="reveal">
 
 			<div class="slides">
-				<section data-background="#407EC9">
-					<h1>TDD in JavaScript</h1>
+				<section data-background="#407EC9" id="cover">
+					<h1><span class="highlight">TDD </span>in JavaScript</h1>
 					<p>
-						<small>Created by <a href="http://icodeit.org">Juntao Qiu</a></small>
+						<small>Created by <a href="http://icodeit.org">Juntao Qiu</a> @<a href="http://www.thoughtworks.com">ThoughtWorks</a></small>
 					</p>
 				</section>
 
-				<section data-background="#3D3679">
+<style>
+	#cover h1{
+		text-shadow: none;
+		color: #eeeeee;
+	}
+
+	#cover small a{
+		color: #f68d2e;
+	}
+
+	#unit-tests section h2{
+		color: #407EC9;
+	}
+
+	.highlight {
+		color: #f68d2e;
+	}
+
+	section img.inline {
+		border: 0;
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	#tdd {
+		color: #eeeeee;
+	}
+
+	#sbe section h2, p, table{
+		color: #407EC9;
+	}
+
+	#sbe p {
+		text-align: left;
+	}
+
+	#sbe table {
+		border-collapse: collapse;
+	}
+	#sbe table td,th {
+		border: 1px solid #407EC9;
+		text-align: center;
+		padding: 4px 0;
+	}
+
+	#sbe table thead th{
+		background-color: #407EC9;
+		color: #eeeeee;
+		padding: 4px 10px;
+	}
+</style>
+				<section data-background="#eeeeee" id="unit-tests">
 					<section>
-						<h2>So, what's <span style="color:lightgreen">TDD</span> anyway</h2>
+						<h2>Frist, let's talk about <span class="highlight">test</span></h2>
+					</section>
+
+					<section><img src="test-pyramid-branding.png" class="inline"></section>
+
+					<section>
+					    <h2>In-time <span class="highlight">Feedback</span></h2>
+					</section>
+
+					<section>
+						<h2>comments</h2>
+						<pre><code data-item>
+/**
+ * updateContent
+ * Update content into the container
+ * 
+ * @param container
+ * @param callback
+ */
+function updateContent(url) {}
+						</code></pre>
+					</section>
+
+					<section>
+							<h2><span class="highlight">documents</span> are out of date, while <span class="highlight">tests</span> aren't</h2>
+					</section>
+
+					<section>
+						<img src="quality_logo.png" class="inline">
+					</section>
+
+					<section>
+						<h2>Confidence of <span class="highlight">refactor</span></h2>
+					</section>
+
+					<section>
+						<h2>Think in <span class="highlight">user's</span> perspective</h2>
+					</section>
+				</section>
+
+				<section data-background="#407EC9" id="tdd">
+					<section>
+						<h2>So, what's <span class="highlight">TDD</span> anyway</h2>
 					</section>
 					<section>
 						<h2>Tea Driven Development</h2>
-						<img src="tea.jpg" style="border:0">
+						<img src="tea.jpg" class="inline">
 					</section>
 
 					<section>
-						<h2><span style="color:lightgreen">Test</span> Driven Development</h2>
+						<h2><span class="highlight">Test</span> Driven Development</h2>
 					</section>
-					<section><img src="tdd_flow.gif" style="border:0"></section>	
+					<section><img src="tdd_flow.gif" class="inline"></section>	
 				</section>
 
-				<section data-background="rgba(94,98,101,0)">
+<!-- 				<section data-background="rgba(94,98,101,0)">
 					<section><h2>Now, let's talk about <span style="color:orangered">BDD</span></h2></section>
 				
 					<section>
@@ -68,21 +161,68 @@
 						<img src="beer.jpg" style="border:0">
 					</section>
 					<section>
-						<h2><span style="color:orangered;">behavior</span> Driven Development</h2>
+						<h2><span class="highlight">behavior</span> Driven Development</h2>
 					</section>
 					<section>
 						<img src="TDD-vs-BDD.jpg" style="border:0">
 					</section>
-				</section>
+				</section> -->
 
-				<section>
+				<section data-background="#eeeeee" id="sbe">
 					<section>
-						<h2>Specification By Example</h2>
+						<h2>Specification By <span class="highlight"> Example</span></h2>
 					</section>
+
 					<section>
-						<pre><code>
-							
-						</code></pre>
+						<h2>Free delivery</h2>
+						<p>
+Free delivery is offered to VIP customers once they reach a certain number of books in their cart. Regular customers, and VIP customers beneath this threshold, do not receive free delivery.
+						</p>
+					</section>
+
+					<section>
+<table>
+    <thead>
+        <tr>
+            <th>Type of customer</th>
+            <th>NO. of books in cart</th>
+            <th>Free delivery?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VIP</td>
+            <td>9</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>VIP</td>
+            <td>10</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>VIP</td>
+            <td>11</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Regular</td>
+            <td>9</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Regular</td>
+            <td>10</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Regular</td>
+            <td>11</td>
+            <td>No</td>
+        </tr>
+    </tbody>
+</table>
+
 					</section>
 				</section>
 
