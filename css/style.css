@@ -1,0 +1,82 @@
+
+	#cover h1{
+		text-shadow: none;
+		color: #eeeeee;
+	}
+
+	#cover small {
+		color: #eeeeee;
+	}
+	#cover small a{
+		color: #f68d2e;
+	}
+
+	#unit-tests section h2{
+		color: #407EC9;
+	}
+
+	#env section h2 {
+		color: #eeeeee;	
+	}
+
+	#practice section h2 {
+		color: #407EC9;
+	}
+
+	.highlight {
+		color: #f68d2e;
+	}
+
+	section img.inline {
+		border: 0;
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	#tdd {
+		color: #eeeeee;
+	}
+
+	#sbe section h2, p, table{
+		color: #407EC9;
+	}
+
+	#sbe p {
+		text-align: left;
+	}
+
+	#sbe table {
+		border-collapse: collapse;
+	}
+
+	#practice table {
+		border-collapse: collapse;
+	}
+
+	#practice table td,th {
+		border: 1px solid #407EC9;
+		text-align: center;
+		padding: 4px 10px;
+	}
+
+	#practice table thead th{
+		background-color: #407EC9;
+		color: #eeeeee;
+		padding: 4px 40px;
+	}
+
+	#sbe table td,th {
+		border: 1px solid #407EC9;
+		text-align: center;
+		padding: 4px 0;
+	}
+
+	#sbe table thead th{
+		background-color: #407EC9;
+		color: #eeeeee;
+		padding: 4px 10px;
+	}
+
+	#end small a {
+		color: #f68d2e;
+	}
